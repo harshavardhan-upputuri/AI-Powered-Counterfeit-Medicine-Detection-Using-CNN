@@ -1,0 +1,53 @@
+{
+  "model_path": "C:\\Final Projects\\counterfiet-detection\\models\\best_model.keras",
+  "split_mode": "deduplicated",
+  "positive_class": "Fake (1)",
+  "negative_class": "Real (0)",
+  "test_set_counts": {
+    "total": 97,
+    "Real_0": 61,
+    "Fake_1": 36
+  },
+  "test_loss": 0.357678,
+  "test_accuracy": 0.835052,
+  "precision": 0.794118,
+  "recall": 0.75,
+  "f1_score": 0.771429,
+  "roc_auc": 0.918488,
+  "macro_f1": 0.821198,
+  "weighted_f1": 0.834025,
+  "per_class_metrics": {
+    "Real_0": {
+      "precision": 0.857143,
+      "recall": 0.885246,
+      "f1_score": 0.870968,
+      "support": 61
+    },
+    "Fake_1": {
+      "precision": 0.794118,
+      "recall": 0.75,
+      "f1_score": 0.771429,
+      "support": 36
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Real (0)",
+      "Fake (1)"
+    ],
+    "matrix": [
+      [
+        54,
+        7
+      ],
+      [
+        9,
+        27
+      ]
+    ],
+    "true_negatives_real": 54,
+    "false_positives_fake": 7,
+    "false_negatives_real": 9,
+    "true_positives_fake": 27
+  }
+}

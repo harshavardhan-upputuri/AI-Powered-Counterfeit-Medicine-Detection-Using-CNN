@@ -1,0 +1,66 @@
+{
+  "dataset_path": "C:\\Final Projects\\counterfiet-detection\\dataset",
+  "exists": true,
+  "missing_folders": [],
+  "raw_split_stats": {
+    "Train": {
+      "split_name": "Train",
+      "fake_valid_count": 240,
+      "real_valid_count": 421,
+      "fake_unique_hashes": 240,
+      "real_unique_hashes": 406,
+      "within_split_duplicates": 15,
+      "skipped_files": [
+        "Train/Real/desktop.ini (Unsupported extension '.ini')"
+      ]
+    },
+    "Val": {
+      "split_name": "Val",
+      "fake_valid_count": 167,
+      "real_valid_count": 286,
+      "fake_unique_hashes": 167,
+      "real_unique_hashes": 281,
+      "within_split_duplicates": 5,
+      "skipped_files": [
+        "Val/Real/desktop.ini (Unsupported extension '.ini')"
+      ]
+    },
+    "Test": {
+      "split_name": "Test",
+      "fake_valid_count": 162,
+      "real_valid_count": 287,
+      "fake_unique_hashes": 162,
+      "real_unique_hashes": 282,
+      "within_split_duplicates": 5,
+      "skipped_files": [
+        "Test/Real/desktop.ini (Unsupported extension '.ini')"
+      ]
+    }
+  },
+  "total_raw_valid_images": 1563,
+  "total_unique_images": 646,
+  "unique_fake_images": 240,
+  "unique_real_images": 406,
+  "cross_split_duplicate_hashes": 604,
+  "val_overlap_with_train_pct": 100.0,
+  "test_overlap_with_train_pct": 100.0,
+  "split_mode_used": "deduplicated",
+  "prepared_counts": {
+    "Train": {
+      "Fake": 168,
+      "Real": 284,
+      "Total": 452
+    },
+    "Val": {
+      "Fake": 36,
+      "Real": 61,
+      "Total": 97
+    },
+    "Test": {
+      "Fake": 36,
+      "Real": 61,
+      "Total": 97
+    }
+  },
+  "class_imbalance_ratio_real_to_fake": 1.692
+}

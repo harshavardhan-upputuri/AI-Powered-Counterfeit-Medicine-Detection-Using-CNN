@@ -1,0 +1,32 @@
+AI-Powered Counterfeit Medicine Detection — Test Set Classification Report
+==========================================================================
+Model Evaluated   : C:\Final Projects\counterfiet-detection\models\best_model.keras
+Split Mode        : deduplicated
+Test Samples      : 97 (Real [0]: 61, Fake [1]: 36)
+Positive Class    : Fake (1)
+Decision Threshold: Sigmoid Score >= 0.5 -> Fake (1), < 0.5 -> Real (0)
+
+Overall Test Accuracy          : 83.51% (0.8351)
+Test Loss (Binary CrossEntropy): 0.3577
+Precision (Positive = Fake [1]): 0.7941
+Recall    (Positive = Fake [1]): 0.7500
+F1-Score  (Positive = Fake [1]): 0.7714
+ROC-AUC Score                  : 0.9185
+
+Confusion Matrix (Rows = Actual [Real=0, Fake=1], Cols = Predicted [Real=0, Fake=1]):
+  True Negatives  (Actual Real -> Predicted Real) : 54
+  False Positives (Actual Real -> Predicted Fake) : 7
+  False Negatives (Actual Fake -> Predicted Real) : 9
+  True Positives  (Actual Fake -> Predicted Fake) : 27
+
+Per-Class Classification Report (scikit-learn):
+--------------------------------------------------------------------------
+                        precision    recall  f1-score   support
+
+    Real (0 - Genuine)     0.8571    0.8852    0.8710        61
+Fake (1 - Counterfeit)     0.7941    0.7500    0.7714        36
+
+              accuracy                         0.8351        97
+             macro avg     0.8256    0.8176    0.8212        97
+          weighted avg     0.8338    0.8351    0.8340        97
+
